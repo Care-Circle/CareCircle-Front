@@ -1,0 +1,53 @@
+/* Reset CSS */
+
+/* Box sizing rules */
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+  /* Remove default margin */
+body,
+h1, h2, h3, h4, h5, h6,
+p, figure,
+blockquote, dl, dd, ol, ul,
+fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+
+  /* Set core body defaults */
+body {
+    line-height: 1;
+}
+
+  /* Remove list styles on ul, ol elements */
+ol, ul {
+    list-style: none;
+}
+
+  /* Reset hyperlink style */
+a {
+    text-decoration: none;
+}
+
+  /* Make images easier to work with */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+  /* Reset some styles for form elements */
+button, input, select, textarea {
+    margin: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+  /* Table-related */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

@@ -1,0 +1,43 @@
+@import url(form/loginStyle.css);
+@import url(form/formStyle.css);
+@import url(form/createStyle.css);
+
+:root {
+    --purple-darker: #40003A;
+    --purple-dark: #840A62;
+    --purple-medium: #A02585;
+    --purple-solid: #E357CC;
+    --purple-ligther: #F470FF
+}
+
+body {
+    box-sizing: border-box;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+a {
+    color: #ddd;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: .8rem;
+    
+    border-radius: 25px;
+    border: 2px solid white;
+    /* border: 3px solid var(--purple-ligther); */
+    background-color: transparent;
+
+    color: var(--purple-ligther);
+    font-family: 'Fira Code', monospace;
+    font-weight: 300;
+}
+
+input::placeholder{
+    font-size: .8rem;
+    color: white;
+    /* color: var(--purple-ligther); */
+}

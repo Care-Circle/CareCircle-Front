@@ -1,0 +1,72 @@
+.body--form {
+    background-color: var(--purple-dark);
+}
+
+.container {
+    background-color: var(--purple-darker);
+    box-shadow: -16px 14px 5.5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 0.2rem;
+
+    max-width: 600px;
+    min-height: 90vh;
+    margin: 1rem auto;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1ren;
+}
+
+.title--welcome{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 100%;
+}
+
+#title-breakline--big{
+    color: var(--purple-dark);
+    text-shadow: -2px -2px 4px rgba(0, 0, 0, 0.8), 2px 2px 4px rgba(255, 255, 255, 0.3);
+
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#title--breakline--small {
+    color: var(--purple-solid);
+
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.division {
+    margin: 20px 0;
+    border: 1px solid var(--purple-medium);
+    width: 100%;
+}
+
+/* INPUTS FORM*/
+.form--container{
+    width: 100%;
+    margin-top: 2rem;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.password-input--conatiner{
+    margin-bottom: 1rem;
+}
+
+
+
+
