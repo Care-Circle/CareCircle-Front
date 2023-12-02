@@ -39,26 +39,36 @@
                 <h2>Registro do Ciclo Menstrual</h2>
 
                 <form action="#" method="post">
-                    <label for="fase-ciclo">Fase do Ciclo:</label>
-                    <select id="fase-ciclo" name="fase-ciclo">
-                        <option value="menstruação">Menstruação</option>
-                        <option value="ovulação">Ovulação</option>
-                        <option value="pré-menstruação">Pré-Menstruação</option>
-                        <option value="fase-lútea">Fase Lútea</option>
-                    </select>
 
-                    <label for="atividade-sexual">Atividade Sexual:</label>
-                    <input type="checkbox" id="atividade-sexual" name="atividade-sexual">
+                    <div>
+                        <label for="fase-ciclo">Fase do Ciclo:</label>
+                        <select id="fase-ciclo" name="fase-ciclo">
+                            <option value="menstruação">Menstruação</option>
+                            <option value="ovulação">Ovulação</option>
+                            <option value="pré-menstruação">Pré-Menstruação</option>
+                            <option value="fase-lútea">Fase Lútea</option>
+                        </select>
+                    </div>
 
-                    <label for="sintomas">Sintomas:</label>
-                    <textarea id="sintomas" name="sintomas" rows="4" placeholder="Descreva seus sintomas..."></textarea>
+                    <div class="form-item">
+                        <label for="atividade-sexual">Atividade Sexual:</label>
+                        <input type="checkbox" id="atividade-sexual" name="atividade-sexual">
+                    </div>
 
-                    <label for="contraceptivo">Método Contraceptivo:</label>
-                    <input type="text" id="contraceptivo" name="contraceptivo" placeholder="Informe seu método contraceptivo">
+                    <div id="form-item--textarea">
+                        <label for="sintomas">Sintomas:</label>
+                        <textarea id="sintomas" name="sintomas" rows="4" placeholder="Descreva seus sintomas..."></textarea>
+                    </div>
+
+                    <div id="form-item--contraceptivo">
+                        <label for="contraceptivo">Método Contraceptivo:</label>
+                        <input type="text" id="contraceptivo" name="contraceptivo" placeholder="Informe seu método contraceptivo">
+                    </div>
 
                     <button type="submit">Registrar</button>
                 </form>
             </section>
+
             <section id="visualizacao-ciclo" class="content-section">
                 <h2>Visualização do Ciclo</h2>
 

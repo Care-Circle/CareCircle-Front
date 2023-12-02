@@ -10,23 +10,43 @@ main {
     margin-bottom: 2rem;
 }
 
-label {
-    display: block;
-    margin-bottom: 0.5rem;
+.content-section > form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    width: 100%;
 }
 
-select, textarea, input {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+.form-item {
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+
+#form-item--textarea, #form-item--contraceptivo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#form-item--textarea > textarea {
+    border-radius: 5px;
+    border: 3px solid var(--purple-ligther);
+}
+
+#form-item--contraceptivo > input{
+    border-radius: 10px;
 }
 
 button {
     background-color: var(--purple-solid);
     color: white;
     padding: 0.5rem 1rem;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
+    width: 30%;
 }
 
 button:hover {
