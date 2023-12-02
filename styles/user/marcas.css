@@ -1,0 +1,62 @@
+/* Estilo para a seção de Marcas Parceiras */
+#marcas-parceiras {
+    margin-bottom: 2rem;
+}
+
+.title-marcas{
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Estilo para o contêiner de ecommerce */
+.ecommerce-container {
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    margin-top: 2rem;
+    height: 100vh;
+}
+
+/* Estilo para o card */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card h4 {
+    color: var(--purple-dark);
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 1rem;
+}
+
+.visit-btn {
+    display: inline-block;
+    background-color: var(--purple-medium);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.visit-btn:hover {
+    background-color: var(--purple-solid);
+}
