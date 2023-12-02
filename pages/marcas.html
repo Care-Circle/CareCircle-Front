@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CareCircle - Página do Usuário</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/user/style.css">
+    </head>
+
+    <body class="body--user">
+        <header class="header">
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="userHome.html" class="nav-link">Home</a></li>
+                    <li><a href="ciclo.html" class="nav-link">Meu Ciclo</a></li>
+                    <li><a href="grupos.html" class="nav-link">Grupos de Apoio</a></li>
+                    <li><a href="hospitais.html" class="nav-link">Hospitais</a></li>
+                    <li class="active"><a href="marcas.html" class="nav-link">Marcas Parceiras</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Perfil</a>
+                        <div class="dropdown-content">
+                            <p>[Nome do Usuário]</p>
+                            <a href="#">Configurações</a>
+                            <button onclick="logout()">Logoff</button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <footer>
+            <div class="footer-title">
+                <h4>Integranetes:</h4>
+            </div>
+            <p>Mariana Spinola - RM553476</p>
+            <p>Beatriz Silva - RM552600</p>
+            <p>Kaua Almeida - RM552618</p>
+        </footer>
+        <script>
+            function logout () {
+                // Adicione aqui a lógica para realizar o logoff, por exemplo, redirecionar para a página de login
+                window.location.href = "../index.html";
+            }
+        </script>
+
+    </body>
+
+</html>

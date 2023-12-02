@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CareCircle - Página do Usuário</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/user/style.css">
+    </head>
+
+    <body class="body--user">
+        <header class="header">
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="active"><a href="userHome.html" class="nav-link">Home</a></li>
+                    <li><a href="ciclo.html" class="nav-link">Meu Ciclo</a></li>
+                    <li><a href="grupos.html" class="nav-link">Grupos de Apoio</a></li>
+                    <li><a href="hospitais.html" class="nav-link">Hospitais</a></li>
+                    <li><a href="marcas.html" class="nav-link">Marcas Parceiras</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Perfil</a>
+                        <div class="dropdown-content">
+                            <p>[Nome do Usuário]</p>
+                            <a href="#">Configurações</a>
+                            <button onclick="logout()">Logoff</button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main-content">
+            <h2>Bem-vindo ao seu perfil, [USER]!</h2>
+
+            <!-- Introdução ao CareCircle, Saúde Inclusiva -->
+            <section id="introducao" class="content-section">
+                <h3>CareCircle, Saúde Inclusiva</h3>
+                <p>
+                    No CareCircle, acreditamos na importância da saúde inclusiva, focada no bem-estar e na facilitação do dia a dia de todos, especialmente do grupo LGBTQIA+ em conjunto com
+                    mulheres. Nosso objetivo é centralizar os cuidados de saúde, proporcionando um ambiente acolhedor e acessível.
+                </p>
+                <p>
+                    Em um mercado que muitas vezes não atende completamente às necessidades específicas desse grupo, trabalhamos para criar uma plataforma aberta e inclusiva. Queremos ser parte
+                    integrante do cuidado e suporte, promovendo a melhor qualidade de vida para todos os usuários do CareCircle.
+                </p>
+            </section>
+
+            <!-- Seção Ciclo Menstrual -->
+            <section id="ciclo-menstrual" class="content-section">
+                <h3>Ciclo Menstrual</h3>
+                <p>
+                    Em nossa seção dedicada ao ciclo menstrual, você pode adicionar informações detalhadas sobre suas fases do ciclo e dados relacionados à sua saúde. Este espaço foi criado para
+                    que você possa registrar suas experiências, monitorar suas fases e obter insights valiosos para o seu bem-estar geral.
+                </p>
+                <p>
+                    Adicione dados sobre sintomas, emoções, atividades e qualquer outra informação relevante para entender melhor o seu ciclo menstrual e promover uma abordagem personalizada à sua
+                    saúde.
+                </p>
+            </section>
+
+            <!-- Seção Grupos de Apoio -->
+            <section id="grupos-de-apoio" class="content-section">
+                <h3>Grupos de Apoio</h3>
+                <p>
+                    Nossa seção de Grupos de Apoio é um espaço aberto para a diversidade. Aqui, você pode encontrar informações sobre grupos específicos, incluindo horários e locais de encontro.
+                    Estes grupos são projetados para oferecer suporte, compartilhar experiências e promover a conexão entre membros da comunidade.
+                </p>
+                <p>
+                    Explore os diversos grupos disponíveis, participe de discussões significativas e descubra um ambiente acolhedor onde todos são bem-vindos.
+                </p>
+            </section>
+
+            <!-- Conteúdo relacionado à página Hospitais -->
+            <section id="hospitais" class="content-section">
+                <h3>Hospitais</h3>
+                <p>
+                    Nossa página de Hospitais utiliza a sua localização para ajudá-lo a encontrar os hospitais mais próximos. Tenha acesso rápido a informações essenciais, como endereços, horários
+                    de funcionamento e serviços oferecidos. Garantimos que, em situações de emergência, você possa encontrar o cuidado médico necessário com facilidade.
+                </p>
+                <p>
+                    A sua saúde é nossa prioridade, e estamos comprometidos em fornecer ferramentas que tornem o acesso aos cuidados médicos o mais simples possível.
+                </p>
+            </section>
+
+            <!-- Seção Marcas Parceiras -->
+            <section id="marcas-parceiras" class="content-section">
+                <h3>Marcas Parceiras</h3>
+                <p>
+                    Nossa seção de Marcas Parceiras é dedicada a trazer marcas que compartilham da nossa proposta de inclusão, visando atender a todos os públicos, especialmente a comunidade
+                    LGBTQIA+. Aqui, você encontrará produtos e serviços de marcas que abraçam a diversidade e contribuem para um ambiente mais acolhedor e inclusivo.
+                </p>
+                <p>
+                    Explore as ofertas exclusivas de nossas marcas parceiras e faça parte de uma comunidade que celebra a diversidade em todos os aspectos.
+                </p>
+            </section>
+
+            <!-- Seção de imagens relacionadas -->
+            <section id="imagens" class="content-section">
+                <h3>Imagens</h3>
+                <div class="image-container">
+                    <img src="imagem1.jpg" alt="Descrição da Imagem 1">
+                    <img src="imagem2.jpg" alt="Descrição da Imagem 2">
+                    <!-- Adicione mais imagens conforme necessário -->
+                </div>
+            </section>
+        </div>
+
+
+        <footer>
+            <div class="footer-title">
+                <h4>Integranetes:</h4>
+            </div>
+            <p>Mariana Spinola - RM553476</p>
+            <p>Beatriz Silva - RM552600</p>
+            <p>Kaua Almeida - RM552618</p>
+        </footer>
+        <script>
+            function logout () {
+                // Adicione aqui a lógica para realizar o logoff, por exemplo, redirecionar para a página de login
+                window.location.href = "../index.html";
+            }
+        </script>
+
+    </body>
+
+</html>

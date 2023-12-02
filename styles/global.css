@@ -1,6 +1,7 @@
 @import url(form/loginStyle.css);
 @import url(form/formStyle.css);
 @import url(form/createStyle.css);
+@import url(footer.css);
 
 :root {
     --purple-darker: #40003A;
@@ -9,6 +10,13 @@
     --purple-solid: #E357CC;
     --purple-ligther: #F470FF
 }
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 body {
     box-sizing: border-box;

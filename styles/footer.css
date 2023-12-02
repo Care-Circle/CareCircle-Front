@@ -1,0 +1,14 @@
+footer {
+    background-color: var(--purple-dark);
+    color: #fff;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-title{
+padding-bottom: 1rem;
+}
