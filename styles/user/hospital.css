@@ -1,41 +1,39 @@
-/* ... (seu código existente) */
-
-/* Estilo para a barra de pesquisa lateral */
-
-/* Adicione este estilo no seu CSS existente */
-
-.hospital-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.search-bar {
+.content-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-right: 20px; /* Ajuste a margem conforme necessário */
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
 }
 
-#searchInput {
-    margin-bottom: 10px;
-    padding: 5px;
+.content-title{
+    text-align: center;
 }
 
-/* Estilo para a lista de hospitais */
+.hospital-cotainer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Espaço entre a lista de hospitais e o mapa */
+}
+/* Adicione ao seu CSS existente para estilizar os resultados da busca de hospitais */
+.hospital-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+
+}
+
 .hospital-list {
-    max-height: 300px;
-    overflow-y: auto;
+    min-height: 250px;
     border: 1px solid #ddd;
     padding: 10px;
     margin-bottom: 20px;
+    flex: 1;
+    overflow-y: auto; /* Adicionado barra de rolagem vertical quando necessário */
 }
 
-/* Estilo para o mapa do Google */
-
 #googleMap {
-    flex: 1; /* O mapa ocupará o restante do espaço disponível */
-    width: 100%;
+    flex: 2; /* O mapa ocupará o dobro do espaço da lista de hospitais */
     height: 400px;
     border: 1px solid #ddd;
     border-radius: 8px;
