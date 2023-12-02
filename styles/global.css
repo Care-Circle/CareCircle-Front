@@ -5,6 +5,7 @@
 @import url(user/marcas.css);
 @import url(user/hospital.css);
 @import url(user/grupos.css);
+@import url(user/ciclo.css);
 
 :root {
     --purple-darker: #40003A;

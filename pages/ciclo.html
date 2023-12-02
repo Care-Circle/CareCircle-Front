@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CareCircle - Página do Usuário</title>
+        <title>CareCircle - Ciclo Menstrual</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap" rel="stylesheet">
@@ -34,7 +34,37 @@
                 </ul>
             </nav>
         </header>
+        <main>
+            <section id="registro-ciclo" class="content-section">
+                <h2>Registro do Ciclo Menstrual</h2>
 
+                <form action="#" method="post">
+                    <label for="fase-ciclo">Fase do Ciclo:</label>
+                    <select id="fase-ciclo" name="fase-ciclo">
+                        <option value="menstruação">Menstruação</option>
+                        <option value="ovulação">Ovulação</option>
+                        <option value="pré-menstruação">Pré-Menstruação</option>
+                        <option value="fase-lútea">Fase Lútea</option>
+                    </select>
+
+                    <label for="atividade-sexual">Atividade Sexual:</label>
+                    <input type="checkbox" id="atividade-sexual" name="atividade-sexual">
+
+                    <label for="sintomas">Sintomas:</label>
+                    <textarea id="sintomas" name="sintomas" rows="4" placeholder="Descreva seus sintomas..."></textarea>
+
+                    <label for="contraceptivo">Método Contraceptivo:</label>
+                    <input type="text" id="contraceptivo" name="contraceptivo" placeholder="Informe seu método contraceptivo">
+
+                    <button type="submit">Registrar</button>
+                </form>
+            </section>
+            <section id="visualizacao-ciclo" class="content-section">
+                <h2>Visualização do Ciclo</h2>
+
+                <!-- Adicione aqui o código ou elementos para a visualização do ciclo -->
+            </section>
+        </main>
         <footer>
             <div class="footer-title">
                 <h4>Integranetes:</h4>
@@ -43,9 +73,9 @@
             <p>Beatriz Silva - RM552600</p>
             <p>Kaua Almeida - RM552618</p>
         </footer>
+
         <script>
             function logout () {
-                // Adicione aqui a lógica para realizar o logoff, por exemplo, redirecionar para a página de login
                 window.location.href = "../index.html";
             }
         </script>
