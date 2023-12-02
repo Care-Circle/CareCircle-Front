@@ -3,6 +3,7 @@
 @import url(form/createStyle.css);
 @import url(footer.css);
 @import url(user/marcas.css);
+@import url(user/hospital.css);
 
 :root {
     --purple-darker: #40003A;
@@ -37,7 +38,7 @@ input {
     
     border-radius: 25px;
     border: 2px solid white;
-    /* border: 3px solid var(--purple-ligther); */
+    border: 3px solid var(--purple-ligther);
     background-color: transparent;
 
     color: var(--purple-ligther);

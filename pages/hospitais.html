@@ -35,6 +35,27 @@
             </nav>
         </header>
 
+        <!-- Seção Hospitais -->
+        <section id="hospitais" class="content-section">
+            <h3>Hospitais</h3>
+
+            <div class="hospital-container">
+                <!-- Barra de Pesquisa Lateral -->
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Pesquisar hospitais...">
+                    <button onclick="searchHospitais()">Pesquisar</button>
+                </div>
+
+                <!-- Lista de Hospitais -->
+                <div class="hospital-list">
+                    <!-- Os resultados da pesquisa serão exibidos aqui -->
+                </div>
+            </div>
+
+            <!-- Mapa do Google -->
+            <div id="googleMap"></div>
+        </section>
+
 
         <footer>
             <div class="footer-title">
@@ -45,11 +66,61 @@
             <p>Kaua Almeida - RM552618</p>
         </footer>
         <script>
+            var map;
+
             function logout () {
-                // Adicione aqui a lógica para realizar o logoff, por exemplo, redirecionar para a página de login
                 window.location.href = "../index.html";
             }
+
+            function searchHospitais () {
+                var searchInput = document.getElementById( 'searchInput' ).value;
+
+                var request = {
+                    location: map.getCenter(),
+                    radius: 5000, // Raio de pesquisa em metros (ajuste conforme necessário)
+                    query: searchInput,
+                    types: [ 'hospital' ]
+                };
+
+                var service = new google.maps.places.PlacesService( map );
+                service.textSearch( request, function ( results, status ) {
+                    if ( status == google.maps.places.PlacesServiceStatus.OK ) {
+                        displayHospitais( results );
+                    } else {
+                        console.error( 'Erro ao pesquisar hospitais:', status );
+                    }
+                } );
+            }
+
+            function displayHospitais ( hospitais ) {
+                var hospitalList = document.querySelector( '.hospital-list' );
+                hospitalList.innerHTML = '';
+
+                hospitais.forEach( function ( hospital ) {
+                    var hospitalItem = document.createElement( 'div' );
+                    hospitalItem.classList.add( 'hospital-item' );
+
+                    var name = document.createElement( 'h4' );
+                    name.textContent = hospital.name;
+
+                    var address = document.createElement( 'p' );
+                    address.textContent = hospital.formatted_address;
+
+                    hospitalItem.appendChild( name );
+                    hospitalItem.appendChild( address );
+                    hospitalList.appendChild( hospitalItem );
+                } );
+            }
+
+            function initMap () {
+                map = new google.maps.Map( document.getElementById( 'googleMap' ), {
+                    center: { lat: -34.397, lng: 150.644 },
+                    zoom: 8
+                } );
+            }
         </script>
+        <!-- Substitua 'SUA_CHAVE_API' pela sua chave de API -->
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkN-ST3xZKu4q0RzWKrytVS85xUt0gzG0&libraries=places&callback=initMap"></script>
 
     </body>
 
